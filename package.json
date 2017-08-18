@@ -1,0 +1,17 @@
+{
+    "name": "storeapp",
+    "version": "0.0.1",
+    "description": "wrapper for c++ connection between native & ionic",
+    "cordova": {
+        "id": "cordova-plugin-storeapp",
+        "platforms": [
+            "ios"
+        ]
+    },
+    "keywords": [
+        "ecosystem:cordova",
+        "cordova-ios"
+    ],
+    "author": "siva",
+    "license": "ISC"
+}

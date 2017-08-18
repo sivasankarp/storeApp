@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-storeapp" version="0.0.1" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>storeapp</name>
+    <js-module name="storeapp" src="www/storeapp.js">
+        <clobbers target="cordova.plugins.storeapp" />
+    </js-module>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="storeapp">
+                <param name="ios-package" value="storeapp" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/storeapp.m" />
+    </platform>
+    <dependency id="codova-plugin-device"></dependency>
+    <dependency id="codova-plugin-console"></dependency>
+</plugin>
